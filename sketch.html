@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+    onkeydown="return false"
+  >
+    <div id="canvasContainer">
+      <button id="clearButton">Clear Masterpiece</button>
+      <canvas id="drawArea"></canvas>
+    </div>
+    <h3 id="selectedColor" style="margin-top: 5px; margin-bottom: 5px">
+      Selected Color:
+    </h3>
+    <div id="colorPicker">
+      <div
+        class="color"
+        style="background: Red"
+        data-color="#ff0000"
+        data-name="Red"
+      ></div>
+      <div
+        class="color"
+        style="background: Orange"
+        data-color="#ffa500"
+        data-name="Orange"
+      ></div>
+      <div
+        class="color"
+        style="background: Yellow"
+        data-color="#ffff00"
+        data-name="Yellow"
+      ></div>
+      <div
+        class="color"
+        style="background: Green"
+        data-color="#008000"
+        data-name="Green"
+      ></div>
+      <div
+        class="color"
+        style="background: Blue"
+        data-color="#0000ff"
+        data-name="Blue"
+      ></div>
+      <div
+        class="color"
+        style="background: Indigo"
+        data-color="#4b0082"
+        data-name="Purple"
+      ></div>
+      <div
+        class="color"
+        style="background: Pink"
+        data-color="#ffc0cb"
+        data-name="Pink"
+      ></div>
+      <div
+        class="color"
+        style="background: Black"
+        data-color="#000000"
+        data-name="Black"
+      ></div>
+      <div
+        class="color"
+        style="background: White"
+        data-color="#ffffff"
+        data-name="White"
+      ></div>
+      <div
+        class="color"
+        style="background: Brown"
+        data-color="#a52a2a"
+        data-name="Brown"
+      ></div>
+    </div>
+    <div class="brush" style="display: inline-block; margin-top: 5px">
+      <label for="thickness">Brush Thickness:</label>
+      <input type="range" id="thickness" min="1" max="50" value="5" />
+      <label for="opacity">Brush Opacity:</label>
+      <input type="range" id="opacity" min="0" max="1" step="0.1" value="1" />
+    </div>
+    <button style="margin: 10px" id="downloadButton">Download picture</button>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
